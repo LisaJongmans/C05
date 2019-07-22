@@ -6,7 +6,7 @@
 /*   By: ljongman <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/19 09:41:42 by ljongman          #+#    #+#             */
-/*   Updated: 2019/07/22 18:55:40 by ljongman         ###   ########.fr       */
+/*   Updated: 2019/07/22 23:52:43 by ljongman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_iterative_factorial(int nb)
 	int answer;
 
 	answer = nb;
-	if (nb > 12 || nb < 0)
+	if (nb < 0)
 		return (0);
 	if (nb == 0 || nb == 1)
 		return (1);
@@ -35,7 +35,7 @@ int		main(void)
 {
 	int nb;
 
-	nb = 6;
+	nb = 10;
 	printf("%i\n", ft_iterative_factorial(nb));
 	return (0);
 }
